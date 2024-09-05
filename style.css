@@ -154,6 +154,7 @@ nav ul li a:hover::after{
     0 0 100px cyan, 0 0 200px cyan 
 }
 .sub-title{
+    margin-bottom: 30px;
     text-align: center;
     font-size: 50px;
 }
