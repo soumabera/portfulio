@@ -33,12 +33,26 @@ nav ul li{
     
 }
 nav ul li a{
+    display: inline-block;
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     padding: 8px 20px;
     position: relative;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
 
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 nav ul li a::after{
     content: '';
@@ -60,6 +74,19 @@ nav ul li a:hover::after{
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 .navbar a{
     display:inline-block;
@@ -92,7 +119,19 @@ nav ul li a:hover::after{
 
     font-size: 25px;
     font-weight: 700px;
-    
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 .home-content h3 span{
     color: #0ef;
@@ -107,7 +146,9 @@ nav ul li a:hover::after{
     font-size: 45px;
     font-weight: 700;
     margin: 8px 0;
-    
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
     
 }
 .home-sci a {
@@ -123,6 +164,21 @@ nav ul li a:hover::after{
     color: #0ef;
     text-decoration: none;
     margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 .home-sci a:hover{
     background: #0ef;
