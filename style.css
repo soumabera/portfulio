@@ -149,6 +149,7 @@ nav ul li a:hover::after{
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
+    font-family: 'Times New Roman', Times, serif;
     
 }
 .home-sci a {
