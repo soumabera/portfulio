@@ -1,11 +1,10 @@
-var typed= new typed(".text",{
-    Strings:["Student,Fresher,Frontend Developer","Youtuber","Web Devoloper"],
-    typespeed:100,
-    backspeed:60,
+var typed = new Typed(".text",{
+    strings:["Web Developer","Front-End Developer","Fresher","Student","YouTuber"],
+    typeSpeed:100,
+    backSpeed:60,
     backDelay:1000,
     loop:true
-
-});
+})
 
 var sidemenu = document.getElementById("sidemenu")
 function openmenu(){
